@@ -35,7 +35,7 @@ export default function LoanProcessPage() {
                         <div>
                             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
                                 <BadgeCheck className="w-4 h-4" />
-                                Central Valley's Top Rated Mortgage Lender
+                                Central Valley{`'`}s Top Rated Mortgage Lender
                             </div>
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 sm:mb-4">
                                 Loan Process
