@@ -10,6 +10,7 @@ import {
   Info,
   BookOpen,
   Phone,
+
   Home as HomeIcon,
   Shield,
   Building2,
@@ -22,6 +23,7 @@ import {
   PhoneCall,
   SquareArrowOutUpRight,
   UserSearch,
+  Loader,
 } from "lucide-react";
 
 import {
@@ -108,6 +110,8 @@ const loanPrograms = [
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
   { href: "/about", label: "About", icon: Info },
+  { href: "/Loan-Process", label: "Loan Process", icon: Loader },
+  
   // {
   //   href: "/Find-a-Loan-Officer",
   //   label: "Find a Loan Officer",
@@ -193,14 +197,14 @@ function NavigationMenuDemo() {
             side="left"
             className="w-[300px] sm:w-[350px] bg-[#E46A52] text-white border-white/10 p-0 overflow-y-auto"
           >
-            <div className="flex h-32 items-center border-b border-white/10 px-1">
+            <div className="flex h-28 items-center border-b border-white/10 px-1">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 <Image
                   src="/img/logo.png"
                   alt="logo"
                   width={100}
                   height={100}
-                  className="w-48 h-36 object-contain"
+                  className="w-38 h-28 object-contain"
                   priority
                 />
               </Link>
@@ -287,7 +291,7 @@ function NavigationMenuDemo() {
                     alt="logo"
                     width={100}
                     height={100}
-                    className="w-42 h-38 object-contain"
+                    className="w-32 h-24 object-contain"
                     priority
                   />
                 </Link>
@@ -333,9 +337,9 @@ function NavigationMenuDemo() {
               {/* <NavigationMenuItem className="text-white text-lg font-semibold rounded-xl transform duration-300 transition-all hover:bg-white/10 hover:-translate-y-1 px-6 py-2">
                 <Link href="/Find-a-Loan-Officer">Find a Loan Officer</Link>
               </NavigationMenuItem> */}
-              {/* <NavigationMenuItem className="text-white text-lg font-semibold rounded-xl transform duration-300 transition-all hover:bg-white/10 hover:-translate-y-1 px-6 py-2">
-                <Link href="/Our-Branches">Our Branches</Link>
-              </NavigationMenuItem> */}
+              <NavigationMenuItem className="text-white text-lg font-semibold rounded-xl transform duration-300 transition-all hover:bg-white/10 hover:-translate-y-1 px-6 py-2">
+                <Link href="/Loan-Process">Loan Process</Link>
+              </NavigationMenuItem>
               <NavigationMenuItem className="text-white text-lg font-semibold rounded-xl transform duration-300 transition-all hover:bg-white/10 hover:-translate-y-1 px-6 py-2">
                 <Link href="/contact-us">Contact Us</Link>
               </NavigationMenuItem>

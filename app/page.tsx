@@ -6,6 +6,7 @@ import FAQ from "./components/FAQ";
 import Loan from "./components/Loan";
 import MortgageCalculator from "./components/MortgageCalculator";
 import MortgageLandingPage from "./components/MortgageLandingPage";
+import VideoSection from "./components/VideoSection";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
    <CreditBuild/>
    <MortgageCalculator/>
    <CardStack/>
+
    <Loan/>
+   <VideoSection/>
    <FAQ/>
    </>
   );

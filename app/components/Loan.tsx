@@ -10,31 +10,31 @@ interface SocialIcon {
 }
 
 const Loan: React.FC = () => {
-   const socialIcons: SocialIcon[] = [
-  {
-    id: "facebook",
-    src: "https://api.iconify.design/uim:facebook-f.svg?color=%23E46A52",
-    alt: "Facebook",
-    url: "https://www.facebook.com/VeronicaBarraganLender/",
-  },
-  {
-    id: "instagram",
-    src: "https://api.iconify.design/uim:instagram.svg?color=%23E46A52",
-    alt: "Instagram",
-    url: "https://instagram.com/homeloansbyveronica/",
-  },
-  // {
-  //   id: "linkedin",
-  //   src: "https://api.iconify.design/uim:linkedin-alt.svg?color=%23004D22",
-  //   alt: "LinkedIn",
-  //   url: "mailto:Veronica@TeamVB.Net",
-  // },
-  {
-  id: "google",
-  src: "https://api.iconify.design/simple-icons:google.svg?color=%23E46A52", 
-  alt: "Google",
-  url: "mailto:LBaird@cfmtg.com",
-}
+  const socialIcons: SocialIcon[] = [
+    {
+      id: "facebook",
+      src: "https://api.iconify.design/uim:facebook-f.svg?color=%23E46A52",
+      alt: "Facebook",
+      url: "https://www.facebook.com/VeronicaBarraganLender/",
+    },
+    {
+      id: "instagram",
+      src: "https://api.iconify.design/uim:instagram.svg?color=%23E46A52",
+      alt: "Instagram",
+      url: "https://instagram.com/homeloansbyveronica/",
+    },
+    // {
+    //   id: "linkedin",
+    //   src: "https://api.iconify.design/uim:linkedin-alt.svg?color=%23004D22",
+    //   alt: "LinkedIn",
+    //   url: "mailto:Veronica@TeamVB.Net",
+    // },
+    {
+      id: "google",
+      src: "https://api.iconify.design/simple-icons:google.svg?color=%23E46A52",
+      alt: "Google",
+      url: "mailto:LBaird@cfmtg.com",
+    },
   ];
 
   return (
@@ -46,17 +46,20 @@ const Loan: React.FC = () => {
           </p>
 
           <h1 className="text-3xl sm:text-4xl font-semibold leading-tight text-gray-900">
-            Our President Sean Cahan,
+            Our President Veronica Barragan,
           </h1>
 
           <p className="mt-6 sm:mt-8 text-gray-800 text-sm sm:text-md leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Our President Sean Cahan, uses his 20 years of experience to
-            transform the loan process for the contemporary home-buyer. Our team
-            of professionals are dedicated to delivering excellent customer
-            service, unmatched communication, and transparent accessibility to
-            you throughout the process. With consistent investment in innovative
-            technology, we promise to enhance your experience, so you can be
-            confident in financing your future!
+            I have been in the Mortgage Industry for the past 30 years and have
+            enjoyed every minute of it. I started as a “Temp Girl” for a small
+            Mortgage Banker in Visalia in 1988 and held the receptionist
+            position. I eventually went on to the positions of: Doc drawer,
+            shipper, loan processor and Loan Officer. At the end of my tenure
+            with this company in 2005, I was Vice President. My true passion in
+            this industry is being a “Loan Officer”. I enjoy meeting clients one
+            on one, and guiding them one step at a time. Whether you need help
+            writing a credit letter, structuring a savings plan, or finding the
+            right home, I am here to assist you.
           </p>
 
           <Link href="/about">

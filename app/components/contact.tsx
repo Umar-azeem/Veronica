@@ -100,7 +100,7 @@ This inquiry was sent from the Veronica Barragan Mortgage website.`,
           </p>
           <Button
             onClick={() => setSubmitted(false)}
-            className="bg-[#E46A52] hover:bg-[#003B1A] text-white"
+            className="bg-[#ec6e55] hover:bg-[#003B1A] text-white"
           >
             Send Another Message
           </Button>

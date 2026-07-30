@@ -128,3 +128,19 @@
     @apply font-sans;
   }
 }
+/* In global.css or a module */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px; /* or 4px */
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(228, 106, 82, 0.2); /* #E46A52 with opacity */
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #E46A52;
+  border-radius: 10px;
+}
+.custom-scrollbar {
+  scrollbar-color: #E46A52 rgba(228, 106, 82, 0.2);
+  scrollbar-width: thin;
+}
