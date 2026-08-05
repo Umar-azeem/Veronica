@@ -19,7 +19,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
           <Link href="/contact-us">
-            <button className="bg-[#E46A52] px-6 py-3 rounded-xl transition-transform duration-300 hover:translate-y-1 w-full sm:w-auto">
+            <button className="bg-[#021B2C] px-6 py-3 rounded-xl transition-transform duration-300 hover:translate-y-1 w-full sm:w-auto">
               Contact us
             </button>
           </Link>
@@ -136,7 +136,7 @@ export default function Footer() {
         <div className="flex flex-row-reverse md:flex-col items-center md:items-end justify-between md:justify-end gap-6 md:gap-0">
           <button
             onClick={scrollToTop}
-            className="w-14 h-14 rounded-full bg-[#E46A52] flex items-center justify-center flex-shrink-0 transition-transform hover:-translate-y-1 active:translate-y-0"
+            className="w-14 h-14 rounded-full bg-[#021B2C] flex items-center justify-center flex-shrink-0 transition-transform hover:-translate-y-1 active:translate-y-0"
             aria-label="Scroll to top"
           >
             <Image

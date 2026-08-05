@@ -34,7 +34,11 @@ export default function MortgageCalculator() {
     total: 0,
   });
 
-  const calculateMortgage = (principal: number, annualRate: number, years: number): number => {
+  const calculateMortgage = (
+    principal: number,
+    annualRate: number,
+    years: number,
+  ): number => {
     if (!principal || !years) return 0;
     const months = years * 12;
     if (annualRate === 0) return principal / months;
@@ -51,12 +55,12 @@ export default function MortgageCalculator() {
     const pi = calculateMortgage(loan, rate, term);
     const tax = (price * 0.006) / 12;
     const insurance = (price * 0.003) / 12;
-    
+
     let pmi = 0;
     if (price > 0 && !isVeteran && down / price < 0.2) {
       pmi = (loan * 0.005) / 12;
     }
-    
+
     const total = pi + tax + insurance + hoa + pmi;
     setResult({ pi, tax, insurance, hoa, pmi, total });
   };
@@ -66,11 +70,10 @@ export default function MortgageCalculator() {
   return (
     <div className="bg-white py-10 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between gap-6 mb-10">
           <div className="w-full md:max-w-lg">
-            <h1 className="text-[#E46A52] font-bold uppercase text-center md:text-start tracking-wide text-md sm:text-lg">
+            <h1 className="text-[#021B2C] font-bold uppercase text-center md:text-start tracking-wide text-md sm:text-lg">
               Mortgage Calculator
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold text-center md:text-start text-black mt-3">
@@ -87,11 +90,11 @@ export default function MortgageCalculator() {
 
         {/* Main Content Split */}
         <div className="flex flex-col lg:flex-row gap-6">
-  
           {/* Inputs Section */}
           <div className="w-full lg:w-2/3 bg-white shadow-md border border-gray-400 rounded-xl p-5 sm:p-8">
             <h3 className="text-lg sm:text-xl font-semibold text-black mb-6">
-              Enter your loan details below and we'll calculate your estimated monthly payment.
+              Enter your loan details below and we'll calculate your estimated
+              monthly payment.
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -104,7 +107,9 @@ export default function MortgageCalculator() {
                     type="number"
                     min="0"
                     value={price}
-                    onChange={(e: ChangeEvent<HTMLInputElement>) => setPrice(Number(e.target.value) || 0)}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                      setPrice(Number(e.target.value) || 0)
+                    }
                     className="w-full border border-gray-300 rounded-lg p-3 text-black text-sm"
                   />
                 </div>
@@ -116,7 +121,9 @@ export default function MortgageCalculator() {
                     type="number"
                     min="0"
                     value={down}
-                    onChange={(e: ChangeEvent<HTMLInputElement>) => setDown(Number(e.target.value) || 0)}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                      setDown(Number(e.target.value) || 0)
+                    }
                     className="w-full border border-gray-300 rounded-lg p-3 text-black text-sm"
                   />
                 </div>
@@ -129,7 +136,9 @@ export default function MortgageCalculator() {
                     step="0.01"
                     min="0"
                     value={rate}
-                    onChange={(e: ChangeEvent<HTMLInputElement>) => setRate(Number(e.target.value) || 0)}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                      setRate(Number(e.target.value) || 0)
+                    }
                     className="w-full border border-gray-300 rounded-lg p-3 text-black text-sm"
                   />
                 </div>
@@ -142,7 +151,9 @@ export default function MortgageCalculator() {
                   </label>
                   <select
                     value={term}
-                    onChange={(e: ChangeEvent<HTMLSelectElement>) => setTerm(Number(e.target.value))}
+                    onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+                      setTerm(Number(e.target.value))
+                    }
                     className="w-full border border-gray-300 rounded-lg p-3 text-black text-sm"
                   >
                     <option value={15}>15 Years</option>
@@ -155,22 +166,27 @@ export default function MortgageCalculator() {
                     <input
                       type="checkbox"
                       checked={isVeteran}
-                      onChange={(e: ChangeEvent<HTMLInputElement>) => setIsVeteran(e.target.checked)}
-                      className="h-5 w-5 accent-[#E46A52]"
+                      onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                        setIsVeteran(e.target.checked)
+                      }
+                      className="h-5 w-5 accent-[#021B2C]"
                     />
-                    <span className="text-black font-medium text-sm">Military Veteran</span>
+                    <span className="text-black font-medium text-sm">
+                      Military Veteran
+                    </span>
                   </label>
                 </div>
               </div>
             </div>
 
             <p className="text-gray-500 text-sm mt-8">
-              Improve the accuracy of your monthly payment estimated by contacting a loan expert.
+              Improve the accuracy of your monthly payment estimated by
+              contacting a loan expert.
             </p>
 
-            <button 
+            <button
               onClick={handleCalculate}
-              className="bg-[#E46A52] text-white rounded-lg p-3 font-semibold mt-5 w-full transition duration-300 hover:-translate-y-1 hover:bg-[#E46A52]/60"
+              className="bg-[#021B2C] text-white rounded-lg p-3 font-semibold mt-5 w-full transition duration-300 hover:-translate-y-1 hover:bg-[#021B2C]/60"
             >
               Calculate
             </button>
@@ -198,23 +214,25 @@ export default function MortgageCalculator() {
                   { label: "HOA", value: result.hoa },
                 ] as const
               ).map(({ label, value }) => (
-                <div key={label} className="flex justify-between items-center gap-4">
+                <div
+                  key={label}
+                  className="flex justify-between items-center gap-4"
+                >
                   <span className="text-gray-400 text-sm">{label}</span>
-                  <span className="font-bold text-sm tabular-nums">${value.toFixed(2)}</span>
+                  <span className="font-bold text-sm tabular-nums">
+                    ${value.toFixed(2)}
+                  </span>
                 </div>
               ))}
             </div>
 
             <a href="/contact-us">
-              <button
-                className="w-full mt-8 bg-white text-black py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-sm"
-              >
+              <button className="w-full mt-8 bg-white text-black py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-sm">
                 Quick Contact
               </button>
             </a>
           </div>
         </div>
-
       </div>
     </div>
   );

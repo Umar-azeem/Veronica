@@ -28,7 +28,7 @@ function buildPhotoUrl(name: string): string {
 }
 
 const avatarColors = [
-  "#E46A52",
+  "#021B2C",
   "#004a25",
   "#1a7a4a",
   "#2d8a5e",
@@ -919,7 +919,7 @@ export default function Find() {
   return (
     <div className="bg-[#f5f5f5] min-h-screen">
       {/* Hero */}
-      <div className="bg-gradient-to-b rounded-2xl from-[#E46A52] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
+      <div className="bg-gradient-to-b rounded-2xl from-[#021B2C] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-sm text-green-200 mb-6">
             <Users className="w-4 h-4" /> Find Your Loan Officer
@@ -961,7 +961,7 @@ export default function Find() {
         <div className="bg-green-50 rounded-2xl p-6 border border-green-200 mb-8">
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="flex items-center gap-3">
-              <div className="bg-[#E46A52] p-2 rounded-full">
+              <div className="bg-[#021B2C] p-2 rounded-full">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -972,7 +972,7 @@ export default function Find() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#E46A52] p-2 rounded-full">
+              <div className="bg-[#021B2C] p-2 rounded-full">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -981,7 +981,7 @@ export default function Find() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#E46A52] p-2 rounded-full">
+              <div className="bg-[#021B2C] p-2 rounded-full">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -1004,8 +1004,8 @@ export default function Find() {
                 onClick={() => toggleFilter(role)}
                 className={`px-3 py-1 text-xs rounded-full border transition ${
                   activeFilters.includes(role)
-                    ? "bg-[#E46A52] text-white border-[#E46A52]"
-                    : "bg-white text-gray-600 border-gray-300 hover:border-[#E46A52]"
+                    ? "bg-[#021B2C] text-white border-[#021B2C]"
+                    : "bg-white text-gray-600 border-gray-300 hover:border-[#021B2C]"
                 }`}
               >
                 {role}
@@ -1072,14 +1072,14 @@ export default function Find() {
                 <div className="flex gap-2 mt-3">
                   <a
                     href={`mailto:${officer.email}`}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-white bg-[#E46A52] rounded-lg hover:bg-[#004a25] transition"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-white bg-[#021B2C] rounded-lg hover:bg-[#004a25] transition"
                   >
                     <Mail className="w-3.5 h-3.5" /> Email
                   </a>
                   {officer.cell && (
                     <a
                       href={`tel:${officer.cell.replace(/\D/g, "")}`}
-                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-[#E46A52] bg-green-50 rounded-lg hover:bg-green-100 transition"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-[#021B2C] bg-green-50 rounded-lg hover:bg-green-100 transition"
                     >
                       <Phone className="w-3.5 h-3.5" /> Call
                     </a>
@@ -1095,7 +1095,7 @@ export default function Find() {
             <p className="text-gray-500">No loan officers found.</p>
             <button
               onClick={clearAll}
-              className="mt-3 text-[#E46A52] font-medium hover:underline text-sm"
+              className="mt-3 text-[#021B2C] font-medium hover:underline text-sm"
             >
               Clear filters
             </button>
@@ -1106,7 +1106,7 @@ export default function Find() {
           <div className="text-center mt-6">
             <button
               onClick={() => setVisibleCount((v) => v + 15)}
-              className="bg-[#E46A52] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
+              className="bg-[#021B2C] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
             >
               Load More
             </button>
@@ -1114,7 +1114,7 @@ export default function Find() {
         )}
 
         {/* CTA */}
-        <div className="mt-12 bg-[#E46A52] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#021B2C] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">
             Not sure which loan officer to contact?
           </h3>
@@ -1124,7 +1124,7 @@ export default function Find() {
           </p>
           <a
             href="tel:7068293294"
-            className="inline-flex items-center gap-2 bg-white text-[#E46A52] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+            className="inline-flex items-center gap-2 bg-white text-[#021B2C] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
           >
             <Phone className="w-5 h-5" /> (559) 638-3338
           </a>

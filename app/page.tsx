@@ -18,7 +18,6 @@ export default function Home() {
    <CreditBuild/>
    <MortgageCalculator/>
    <CardStack/>
-
    <Loan/>
    <VideoSection/>
    <FAQ/>

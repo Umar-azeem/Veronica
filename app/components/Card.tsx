@@ -14,8 +14,8 @@ const cards = [
     description:
       "With over 20 years in finance, I provide a level of expertise that financially benefits clients and is deeply respected by industry professionals nationwide.",
     icon: Award,
-    gradient: "from-[#AC3420] via-[#E46A52] to-[#E46A52]",
-    backBg: "bg-[#AC3420]",
+    gradient: "from-	#011829] via-[#020B2C] to-[#021B2C]",
+    backBg: "bg-[#021B2C]",
     backTitle: "Why Experience Matters",
     features: [
       "20+ years in mortgage finance",
@@ -31,8 +31,8 @@ const cards = [
     description:
       "By choosing to be a boutique broker of loan products, our firm is in the best position to deliver optimal choice, aggressive rates, and personal service to every client.",
     icon: TrendingDown,
-    gradient: "from-[#EAA99C] via-[#E46A52] to-[#E46A52]",
-    backBg: "bg-[#AC3420]",
+    gradient: "from-	#011829] via-[#021B2C] to-[#021B2C]",
+    backBg: "bg-[#021B2C]",
     backTitle: "Our Advantage",
     features: [
       "Access to 50+ lenders",
@@ -48,8 +48,8 @@ const cards = [
     description:
       "Here is what we say to challenges — 'bring it on.' We work tirelessly to close all loans, and we don't walk away when a client is up against tough circumstances.",
     icon: Handshake,
-    gradient: "from-[#E46A52] via-[#962616] to-[#EAA99C]",
-    backBg: "bg-[#AC3420]",
+    gradient: "from-	#011829] via-[#021B2C] to-[#022B2C]",
+    backBg: "bg-[#021B2C]",
 
     backTitle: "Our Commitment",
     features: [
@@ -214,7 +214,7 @@ function Card({
               <Link
                 href="/about"
                 onClick={(e) => e.stopPropagation()}
-                className="bg-[#962616] text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium hover:scale-105 transition-transform"
+                className="bg-[#021B2C] text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium hover:scale-105 transition-transform"
               >
                 About me
                 <ChevronRight className="w-4 h-4" />
@@ -337,7 +337,7 @@ export default function CardStack() {
         }
       `}</style>
 
-      <div className="overflow-hidden min-h-screen rounded-2xl bg-gradient-to-br from-[#E46A52] via-[#C2432E] to-[#E46A52] flex flex-col items-center justify-center p-4 font-sans">
+      <div className="overflow-hidden min-h-screen rounded-2xl bg-gradient-to-br from-[#021B2C] via-[#02304e] to-[#021B2C] flex flex-col items-center justify-center p-4 font-sans">
         <div className="w-full max-w-lg">
           {/* Header */}
           <div className="text-center mb-8">

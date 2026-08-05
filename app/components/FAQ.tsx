@@ -26,11 +26,13 @@ const faqs = [
   },
   {
     question: "How do I calculate mortgage payments?",
-    answer:"You can use our comprehensive mortgage calculator on the Tools page. It allows you to factor in the home price, down payment, interest rate, loan term, and other costs to estimate your monthly payment. You can even download an amortization schedule."
+    answer:
+      "You can use our comprehensive mortgage calculator on the Tools page. It allows you to factor in the home price, down payment, interest rate, loan term, and other costs to estimate your monthly payment. You can even download an amortization schedule.",
   },
   {
     question: "What cash-out option is better for me?",
-    answer:"A HELOC (Home Equity Line of Credit) and a HELOAN (Home Equity Loan) are both great options to access your home equity as cash, but what's the difference? Here is the high-level break down, but give us a call and we will help you choose the right option, with side-by-side comparisons and advice from a dedicated mortgage profession."
+    answer:
+      "A HELOC (Home Equity Line of Credit) and a HELOAN (Home Equity Loan) are both great options to access your home equity as cash, but what's the difference? Here is the high-level break down, but give us a call and we will help you choose the right option, with side-by-side comparisons and advice from a dedicated mortgage profession.",
   },
 ];
 
@@ -44,7 +46,7 @@ export default function FAQ() {
   return (
     <section className="bg-gray-50 py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <p className="text-[#E46A52] font-bold uppercase text-center tracking-widest text-sm sm:text-base">
+        <p className="text-[#021B2C] font-bold uppercase text-center tracking-widest text-sm sm:text-base">
           FAQ
         </p>
 
@@ -60,12 +62,12 @@ export default function FAQ() {
                 className="w-full flex items-start sm:items-center gap-3 sm:gap-4 text-left"
               >
                 {openIndex === index ? (
-                  <Minus className="text-[#E46A52] w-5 h-5 sm:w-7 sm:h-7 flex-shrink-0 mt-1 sm:mt-0" />
+                  <Minus className="text-[#021B2C] w-5 h-5 sm:w-7 sm:h-7 flex-shrink-0 mt-1 sm:mt-0" />
                 ) : (
-                  <Plus className="text-[#E46A52] w-5 h-5 sm:w-7 sm:h-7 flex-shrink-0 mt-1 sm:mt-0" />
+                  <Plus className="text-[#021B2C] w-5 h-5 sm:w-7 sm:h-7 flex-shrink-0 mt-1 sm:mt-0" />
                 )}
 
-                <span className="text-base sm:text-xl font-bold text-[#E46A52]">
+                <span className="text-base sm:text-xl font-bold text-[#021B2C]">
                   {faq.question}
                 </span>
               </button>

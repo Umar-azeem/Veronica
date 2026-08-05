@@ -10,7 +10,6 @@ import {
   Info,
   BookOpen,
   Phone,
-
   Home as HomeIcon,
   Shield,
   Building2,
@@ -111,7 +110,7 @@ const navLinks = [
   { href: "/", label: "Home", icon: Home },
   { href: "/about", label: "About", icon: Info },
   { href: "/Loan-Process", label: "Loan Process", icon: Loader },
-  
+
   // {
   //   href: "/Find-a-Loan-Officer",
   //   label: "Find a Loan Officer",
@@ -143,7 +142,7 @@ function NavigationMenuDemo() {
       id="animated-navbar"
       className={`fixed top-0 left-0 right-0 z-50 px-4 py-3
         transition-all duration-500 ease-in-out
-        ${scrolled ? "bg-[#E46A52] shadow-md" : "bg-transparent"}`}
+        ${scrolled ? "bg-[#021B2C] shadow-md" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -151,7 +150,7 @@ function NavigationMenuDemo() {
             <Button
               variant="default"
               size="icon"
-              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#E46A52] h-10 w-10"
+              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021B2C] h-10 w-10"
             >
               <Menu className="h-10 w-10 text-2xl " />
             </Button>
@@ -165,7 +164,7 @@ function NavigationMenuDemo() {
               <Button
                 variant="default"
                 size="icon"
-                className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#E46A52] h-10 w-10"
+                className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021B2C] h-10 w-10"
               >
                 <SquareArrowOutUpRight className="h-10 w-10 text-2xl " />
               </Button>
@@ -173,7 +172,7 @@ function NavigationMenuDemo() {
             <Button
               variant="default"
               size="icon"
-              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#E46A52] h-10 w-10"
+              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021B2C] h-10 w-10"
             >
               <a
                 href="https://wa.me/15596383338"
@@ -195,7 +194,7 @@ function NavigationMenuDemo() {
           </div>
           <SheetContent
             side="left"
-            className="w-[300px] sm:w-[350px] bg-[#E46A52] text-white border-white/10 p-0 overflow-y-auto"
+            className="w-[300px] sm:w-[350px] bg-[#021B2C] text-white border-white/10 p-0 overflow-y-auto"
           >
             <div className="flex h-28 items-center border-b border-white/10 px-1">
               <Link href="/" onClick={() => setIsOpen(false)}>
@@ -265,7 +264,7 @@ function NavigationMenuDemo() {
                 href="https://wa.me/15596383338"
                 className="flex gap-2 justify-center w-full px-4"
               >
-                <button className="bg-white flex justify-center gap-4 text-[#E46A52] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+                <button className="bg-white flex justify-center gap-4 text-[#021B2C] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
                   (559) 638-3338{" "}
                 </button>
               </Link>
@@ -273,7 +272,7 @@ function NavigationMenuDemo() {
                 href="https://teamvb.shapeportal.com/ref/7"
                 className="w-full px-4"
               >
-                <button className="bg-white text-[#E46A52] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+                <button className="bg-white text-[#021B2C] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
                   Apply Online
                 </button>
               </Link>
@@ -313,16 +312,16 @@ function NavigationMenuDemo() {
                           <a
                             href={program.href}
                             rel="noreferrer"
-                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#E46A52] hover:text-[#E46A52]-foreground group"
+                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#021B2C] hover:text-[#021B2C]-foreground group"
                           >
-                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#E46A52]/10 text-[#E46A52] group-hover:bg-[#E46A52] group-hover:text-[white] transition-colors">
+                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#021B2C]/10 text-[#021B2C] group-hover:bg-[#021B2C] group-hover:text-[white] transition-colors">
                               <program.icon className="h-4 w-4" />
                             </div>
                             <div className="flex flex-col gap-0.5">
-                              <div className="font-semibold leading-none  text-[#E46A52]">
+                              <div className="font-semibold leading-none  text-[#021B2C]">
                                 {program.title}
                               </div>
-                              <div className="line-clamp-2 text-xs leading-snug text-[#E46A52]">
+                              <div className="line-clamp-2 text-xs leading-snug text-[#021B2C]">
                                 {program.description}
                               </div>
                             </div>
@@ -356,7 +355,7 @@ function NavigationMenuDemo() {
             target="_blank"
             className="flex gap-2 justify-center "
           >
-            <button className="bg-white text-[#E46A52] px-6 py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+            <button className="bg-white text-[#021B2C] px-6 py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
               Apply Now
             </button>
           </Link>

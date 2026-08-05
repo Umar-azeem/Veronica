@@ -148,7 +148,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Veronica Barragan */}
-      <div className="relative bg-gradient-to-r from-[#f13813] to-[#fc5736] text-white rounded-2xl">
+      <div className="relative bg-gradient-to-r from-[#020B2C] to-[#021B2C] text-white rounded-2xl">
         <div
           className="absolute inset-0 z-0 opacity-20"
           style={{
@@ -177,7 +177,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact-us">
-                  <button className="bg-white text-[#E46A52] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  <button className="bg-white text-[#021B2C] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Get Pre-Approved
                   </button>
                 </Link>
@@ -191,7 +191,7 @@ export default function AboutPage() {
 
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                <div className="absolute inset-0 rounded-full bg-[#f13813]/95 animate-pulse" />
+                <div className="absolute inset-0 rounded-full bg-[#011829]/95 animate-pulse" />
                 <Image
                   src="/img/vdp.png"
                   alt="Veronica Barragan - Senior Loan Officer"
@@ -200,7 +200,7 @@ export default function AboutPage() {
                   priority
                 />
                 <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-3 shadow-lg">
-                  <Icons.BadgeCheck className="w-8 h-8 text-[#E46A52]" />
+                  <Icons.BadgeCheck className="w-8 h-8 text-[#021B2C]" />
                 </div>
               </div>
             </div>
@@ -250,14 +250,14 @@ export default function AboutPage() {
               <div className="mt-6 flex items-center gap-4">
                 <a
                   href="tel:7068293294"
-                  className="text-[#E46A52] font-medium flex items-center gap-2"
+                  className="text-[#021B2C] font-medium flex items-center gap-2"
                 >
                   <Icons.Phone className="w-4 h-4" />
                   (559) 638-3338
                 </a>
                 <a
                   href="mailto:Veronica@TeamVB.Net"
-                  className="text-[#E46A52] font-medium flex items-center gap-2"
+                  className="text-[#021B2C] font-medium flex items-center gap-2"
                 >
                   <Icons.Mail className="w-4 h-4" />
                   Veronica@TeamVB.Net
@@ -292,8 +292,8 @@ export default function AboutPage() {
                   key={index}
                   className="text-center p-6 rounded-xl hover:bg-gray-50 transition"
                 >
-                  <div className="w-14 h-14 bg-[#E46A52]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-7 h-7 text-[#E46A52]" />
+                  <div className="w-14 h-14 bg-[#021B2C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-7 h-7 text-[#021B2C]" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">
                     {value.title}
@@ -318,7 +318,7 @@ export default function AboutPage() {
               prepayment amounts to see their impact on your mortgage.
             </p>
             <Link href="/calculator">
-              <button className="bg-[#E46A52] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
+              <button className="bg-[#021B2C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
                 Try Our Mortgage Calculator
               </button>
             </Link>
@@ -350,7 +350,7 @@ export default function AboutPage() {
         </section>
 
         {/* Let's Get You Into Your Dream Home */}
-        <section className="mb-16 bg-[#E46A52] text-white rounded-2xl p-8 text-center">
+        <section className="mb-16 bg-[#021B2C] text-white rounded-2xl p-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Let{`'`}s get you into your dream home
           </h2>
@@ -362,7 +362,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="mailto:LBaird@cfmtg.com">
-              <button className="bg-white text-[#E46A52] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+              <button className="bg-white text-[#021B2C] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Get Started Today
               </button>
             </a>
@@ -385,7 +385,7 @@ export default function AboutPage() {
                 key={step.step}
                 className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
               >
-                <div className="w-12 h-12 bg-[#E46A52] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                <div className="w-12 h-12 bg-[#021B2C] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -401,7 +401,7 @@ export default function AboutPage() {
                 key={step.step}
                 className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
               >
-                <div className="w-12 h-12 bg-[#E46A52] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                <div className="w-12 h-12 bg-[#021B2C] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -456,7 +456,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Footer */}
-        <div className="mt-12 bg-[#E46A52] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#021B2C] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">Ready to get started?</h3>
           <p className="text-green-200 mb-6 text-sm">
             Contact Veronica today for a no-obligation consultation.
@@ -464,7 +464,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:+15596383338"
-              className="inline-flex items-center gap-2 bg-white text-[#E46A52] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+              className="inline-flex items-center gap-2 bg-white text-[#021B2C] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
             >
               <Icons.Phone className="w-5 h-5" /> (559)-638-3338
             </a>

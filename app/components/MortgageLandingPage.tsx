@@ -27,7 +27,7 @@ const MortgageLandingPage = () => {
 
   return (
     <div className="">
-      <div className="rounded-3xl bg-[#E46A52] text-white font-sans overflow-hidden relative ">
+      <div className="rounded-3xl bg-[#021B2C] text-white font-sans overflow-hidden relative ">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none hidden md:block">
           {/* <svg width="600" height="700" viewBox="0 0 600 700" fill="none">
             <path

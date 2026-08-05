@@ -41,7 +41,7 @@ const Loan: React.FC = () => {
     <section className="bg-[#f5f5f5] py-12 px-4 sm:py-16 sm:px-6">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
         <div className="text-center lg:text-left">
-          <p className="text-[#E46A52] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold mb-4 text-sm sm:text-base">
+          <p className="text-[#021B2C] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold mb-4 text-sm sm:text-base">
             A Team You Can Trust
           </p>
 
@@ -65,7 +65,7 @@ const Loan: React.FC = () => {
           <Link href="/about">
             {" "}
             <button
-              className="mt-8 sm:mt-10 inline-flex items-center gap-3 bg-[#E46A52] hover:bg-[#E46A52]/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold transition mx-auto lg:mx-0"
+              className="mt-8 sm:mt-10 inline-flex items-center gap-3 bg-[#021B2C] hover:bg-[#021B2C]/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold transition mx-auto lg:mx-0"
               type="button"
             >
               About me
@@ -82,7 +82,7 @@ const Loan: React.FC = () => {
                 <div className="h-1 w-1 bg-white rounded-full" />
               </div>
             </div>
-            <div className="w-full max-w-[400px] md:max-w-[500px] aspect-[4/5]  md:h-[500px] bg-[#E46A52] rounded-[20px]" />
+            <div className="w-full max-w-[400px] md:max-w-[500px] aspect-[4/5]  md:h-[500px] bg-[#021B2C] rounded-[20px]" />
             <Image
               src="/img/vdp.png"
               alt="Advisor"
@@ -106,7 +106,7 @@ const Loan: React.FC = () => {
               <a
                 key={icon.id}
                 href={icon.url}
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full text-[#E46A52] border border-[#E46A52] flex items-center justify-center hover:bg-[#E46A52] transition group"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full text-[#021B2C] border border-[#021B2C] flex items-center justify-center hover:bg-[#021B2C] transition group"
                 aria-label={icon.alt}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -116,7 +116,7 @@ const Loan: React.FC = () => {
                   alt={icon.alt}
                   width={20}
                   height={20}
-                  className="w-5 h-5 group-hover:brightness-0 text-[#E46A52] group-hover:invert transition-all"
+                  className="w-5 h-5 group-hover:brightness-0 text-[#021B2C] group-hover:invert transition-all"
                   unoptimized
                 />
               </a>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 // ---------- Types ----------
 interface Video {
@@ -19,14 +19,14 @@ const VIDEO_DATA: Video[] = [
     title: "Adrian Yeebi",
     description: "The Most Important Thing to Homebuyers",
     duration: "4:32",
-    src: "/img/v1.mp4",
+    src: "/img/v8.mp4",
   },
   {
     id: "2",
     title: "Sarah Mitchell",
     description: "Why I Chose This Mortgage Advisor",
     duration: "6:15",
-    src: "/img/v2.mp4",
+    src: "/img/v10.mp4",
   },
   {
     id: "3",
@@ -256,7 +256,7 @@ const ReelCard = ({
         <div className="flex items-center gap-1.5 mt-1.5">
           <span
             className="w-1.5 h-1.5 rounded-full"
-            style={{ background: "#E46A52" }}
+            style={{ background: "#021B2C" }}
           />
           <span className="text-[10px] text-white/50 font-medium tracking-wide uppercase">
             Reel
@@ -351,7 +351,7 @@ const VideoModal = ({
           <h3 className="text-white font-bold text-lg">{video.title}</h3>
           <p className="text-white/70 text-sm mt-0.5">{video.description}</p>
           <div className="flex items-center gap-3 mt-2">
-            <span className="text-[#E46A52] text-xs font-semibold uppercase tracking-wider">
+            <span className="text-[#021B2C] text-xs font-semibold uppercase tracking-wider">
               {video.duration}
             </span>
             <span className="w-1 h-1 rounded-full bg-white/30" />
@@ -435,10 +435,10 @@ export default function VideoCarousel() {
           <div className="flex items-center gap-3 mb-1">
             <span
               className="w-1 h-8 rounded-full"
-              style={{ background: "#E46A52" }}
+              style={{ background: "#021B2C" }}
             />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">
-              Client <span style={{ color: "#E46A52" }}>Reels</span>
+              Client <span style={{ color: "#021B2C" }}>Reels</span>
             </h2>
           </div>
           <p className="text-sm text-slate-500 ml-4 pl-0.5">
@@ -450,11 +450,11 @@ export default function VideoCarousel() {
           <span className="relative flex h-2 w-2">
             <span
               className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-              style={{ background: "#E46A52" }}
+              style={{ background: "#021B2C" }}
             />
             <span
               className="relative inline-flex rounded-full h-2 w-2"
-              style={{ background: "#E46A52" }}
+              style={{ background: "#021B2C" }}
             />
           </span>
           <span className="text-xs font-medium text-slate-600">
@@ -498,7 +498,7 @@ export default function VideoCarousel() {
           disabled={!showRightArrow}
           className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg -mr-4 ${
             showRightArrow
-              ? "bg-white text[#E46A52] hover:bg-slate-50 hover:scale-105 border border-slate-200"
+              ? "bg-white text[#021B2C] hover:bg-slate-50 hover:scale-105 border border-slate-200"
               : "bg-slate-100 text-slate-300 cursor-not-allowed opacity-50"
           }`}
           aria-label="Scroll right"
@@ -510,11 +510,11 @@ export default function VideoCarousel() {
         </button>
       </div>
 
-      {/* Long Scroller - all ticks now #E46A52 */}
+      {/* Long Scroller - all ticks now #021B2C */}
       <div className="mt-6 px-2">
         <div
           ref={trackRef}
-          className="relative w-full h-2 bg-[#E46A52]/20 rounded-full cursor-pointer overflow-visible"
+          className="relative w-full h-2 bg-[#021B2C]/20 rounded-full cursor-pointer overflow-visible"
           onClick={handleTrackClick}
         >
           {/* Filled progress */}
@@ -522,11 +522,11 @@ export default function VideoCarousel() {
             className="absolute left-0 top-0 h-full rounded-full transition-all duration-150"
             style={{
               width: `${scrollProgress * 100}%`,
-              background: "#E46A52",
+              background: "#021B2C",
             }}
           />
 
-          {/* Tick marks - all #E46A52 */}
+          {/* Tick marks - all #021B2C */}
           {VIDEO_DATA.map((_, i) => {
             const position = i / (VIDEO_DATA.length - 1);
             return (
@@ -535,7 +535,7 @@ export default function VideoCarousel() {
                 className="absolute top-1/2 -translate-y-1/2 w-1 h-4 rounded-full transition-colors duration-200"
                 style={{
                   left: `${position * 100}%`,
-                  background: "#E46A52",
+                  background: "#021B2C",
                   transform: "translateX(-50%) translateY(-50%)",
                 }}
               />
