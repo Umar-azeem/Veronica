@@ -122,7 +122,7 @@ const MortgageLandingPage = () => {
                 </div>
               </div>
               <img
-                src="/img/vdp.png"
+                src="/img/dp.png"
                 alt="Adrian Webb"
                 className="w-full h-[400px] sm:h-[580px] lg:h-[550px] object-cover object-top rounded-2xl"
                 style={{

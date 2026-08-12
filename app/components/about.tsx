@@ -193,7 +193,7 @@ export default function AboutPage() {
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 rounded-full bg-[#011829]/95 animate-pulse" />
                 <Image
-                  src="/img/vdp.png"
+                  src="/img/vdp1.png"
                   alt="Veronica Barragan - Senior Loan Officer"
                   fill
                   className="rounded-full object-cover border-4 border-white/20 shadow-2xl"
