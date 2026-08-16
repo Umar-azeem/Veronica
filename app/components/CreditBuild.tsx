@@ -17,6 +17,7 @@ const items = [
 ];
 
 const CreditBuild = () => {
+  
   return (
     <div className="w-full bg-gray-100 py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10 rounded-2xl">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
