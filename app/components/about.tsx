@@ -3,6 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as Icons from "lucide-react";
+import {
+  ArrowRight,
+  Award,
+  CheckCircle,
+  Heart,
+  Mail,
+  Phone,
+  Star,
+  Users,
+} from "lucide-react";
 
 export default function AboutPage() {
   const values = [
@@ -304,6 +314,125 @@ export default function AboutPage() {
             })}
           </div>
         </section>
+
+        <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+  <h2 className="text-2xl md:text-3xl font-bold text-[#08263d] mb-8 text-center">
+    ME, & My Team
+  </h2>
+
+  <div className="relative w-full rounded-xl overflow-hidden mb-2">
+    <div className="absolute inset-0 z-20 flex items-center justify-center">
+      <div className="text-center text-white">
+        <h3 className="text-2xl md:text-4xl font-bold drop-shadow-lg">
+          A Team You Can Trust
+        </h3>
+        <p className="text-white/90 mt-2 drop-shadow-lg">
+          Helping thousands of families achieve their dream of
+          homeownership
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="lg:col-span-1 relative h-64 md:h-1/3">
+      <Image
+        src="/img/team.jfif"
+        alt="Team Banner 1"
+        fill
+        className="object-cover rounded-xl"
+        sizes="(max-width: 1024px) 100vw, 33vw"
+      />
+    </div>
+    <div className="lg:col-span-2">
+      <div className="prose max-w-none">
+        <div className="bg-[#eef5f6] rounded-xl p-6 mb-4">
+          <h4 className="text-lg font-bold text-[#08263d] mb-3 flex items-center gap-2">
+            <Heart size={20} className="text-[#67d8dc]" />
+            My Journey in Mortgage
+          </h4>
+          <p className="text-gray-700 leading-relaxed">
+            I have been in the Mortgage Industry for the past 30 years
+            and have enjoyed every minute of it. I started as a{" "}
+            <strong>"Temp Girl"</strong> for a small Mortgage Banker in
+            Visalia in 1988 and held the receptionist position. I
+            eventually went on to the positions of: Doc drawer, shipper,
+            loan processor and Loan Officer. At the end of my tenure
+            with this company in 2005, I was
+            <strong> Vice President</strong>.
+          </p>
+        </div>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          My true passion in this industry is being a{" "}
+          <strong>"Loan Officer"</strong>. I enjoy meeting clients one
+          on one, and guiding them one step at a time. Whether you need
+          help writing a credit letter, structuring a savings plan, or
+          finding the right home, I am here to assist you.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div className="bg-white rounded-xl p-4 border border-gray-200">
+            <div className="flex items-center gap-2 text-[#67d8dc]">
+              <CheckCircle size={18} />
+              <span className="font-semibold text-[#08263d]">
+                My Passion
+              </span>
+            </div>
+            <p className="text-sm text-gray-600 mt-1">
+              Meeting clients one on one and guiding them step by step
+            </p>
+          </div>
+          <div className="bg-white rounded-xl p-4 border border-gray-200">
+            <div className="flex items-center gap-2 text-[#67d8dc]">
+              <Users size={18} />
+              <span className="font-semibold text-[#08263d]">
+                My Team
+              </span>
+            </div>
+            <p className="text-sm text-gray-600 mt-1">
+              Dedicated professionals helping thousands in the Central
+              Valley
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-6 p-4 bg-[#08263d] rounded-xl text-white">
+          <p className="italic text-white/90">
+            "My team and I would love to help you get into a new home.
+            We have helped thousands of individuals and families within
+            the Central Valley, and would love to help you, too…"
+          </p>
+          <div className="flex items-center gap-4 mt-3 pt-3 border-t border-white/20">
+            <div className="flex items-center gap-2">
+              <Star size={16} className="text-[#67d8dc]" />
+              <span className="text-sm">30 Years Experience</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Award size={16} className="text-[#67d8dc]" />
+              <span className="text-sm">Vice President</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 flex flex-wrap gap-4">
+          <Link
+            href="/contact-us"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#67d8dc] text-[#08263d] font-bold rounded-full hover:bg-[#67d8dc]/90 transition-all hover:scale-105"
+          >
+            Contact Veronica <ArrowRight size={18} />
+          </Link>
+          <Link
+            href="/#calculator"
+            className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#08263d] text-[#08263d] font-bold rounded-full hover:bg-[#08263d] hover:text-white transition-all"
+          >
+            Try Our Calculator <ArrowRight size={18} />
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* What Can I Afford? */}
         <section className="mb-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
