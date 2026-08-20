@@ -335,9 +335,9 @@ export default function AboutPage() {
   </div>
   
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-  <div className="lg:col-span-1 relative h-64 md:h-[400px] lg:h-full min-h-[300px]">
+  <div className="lg:col-span-1 relative h-64 md:h-1/3  min-h-1/3">
     <Image
-      src="/img/team.jfif"
+      src="/img/team.png"
       alt="Team Banner 1"
       fill
       className="object-cover rounded-xl"
